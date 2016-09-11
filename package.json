@@ -1,0 +1,35 @@
+{
+  "name": "fis3-vue-scaffold",
+  "version": "1.0.0",
+  "description": "fis3+vue spa webapp",
+  "main": "index.js",
+  "scripts": {
+    "release": "fis3 release debug",
+    "start": "fis3 server start --type node --root ./output",
+    "watch": "fis3 release debug -wL",
+    "dev": "npm run start && npm run watch",
+    "test": "fis3 release test -wcd ./output",
+    "build": "fis3 release prod"
+  },
+  "dependencies": {
+    "vue": "^1.0.25",
+    "vue-resource": "^1.0.0",
+    "vue-router": "^0.7.13"
+  },
+  "author": "Iversong",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-preset-es2015": "^6.3.13",
+    "fis-parser-babel-5.x": "^1.3.0",
+    "fis-parser-less": "^0.1.3",
+    "fis3-parser-vue-component": "^4.0.1",
+    "fis-postprocessor-require-async": "0.0.9",
+    "fis3-deploy-aliyun": "^1.0.1",
+    "fis3-hook-commonjs": "^0.1.11",
+    "fis3-hook-node_modules": "^1.0.19",
+    "fis3-postpackager-loader": "^1.3.13",
+    "fis3-preprocessor-js-require-css": "^0.1.0",
+    "fis3-preprocessor-js-require-file": "^0.1.0"
+  }
+}
