@@ -1,14 +1,14 @@
 export default function (router) {
-	router.map({
-			'/': {
-				component: function(resolve) {
-	        //异步加载组件
-	        require.async('/src/views/App',resolve)
-	      }
-			}
-	})
+  router.map({
+    '/': {
+      component: function(resolve) {
+        //异步加载组件
+        require.async('/src/views/App',resolve)
+      }
+    }
+  })
 
-	router.beforeEach(function ({to, from, next}) {
+  router.beforeEach(function ({to, from, next}) {
     let toPath = to.path
     let fromPath = from.path
     console.log('to: ' + toPath + ' from: ' + fromPath)
